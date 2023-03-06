@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="RESOURCES/style.css">
+    <title>Flexbox Business Site</title>
+    <style>
+    body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.nav-container {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    position: sticky;
+
+
+}
+#logo {
+    
+    margin: 0 0 ;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+.nav-content li {
+    display: inline;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+}
+a {
+    color: white;
+}
+.banner {
+    display: block;
+  height: 500px;
+  width: auto;
+  margin: auto 0;
+  align-content: center;
+  text-align: center;
+  background-image: src("RESOURCES/IMAGES/logo 2D.png");
+  background-repeat: initial;
+  background-size: cover;
+  image-rendering: auto;
+  font-size: 26px;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: auto;
+    
+    ;
+}
+.card-1 {
+    align-self: center;
+    margin: 10px;
+    border: 1px solid green;
+    width: 500px;
+    height: 400px;
+    font-size: 18px;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+}
+#programmes {
+    
+    background-image: url("RESOURCES/IMAGES/football-pitch-layout-vector-12533427.jpg");
+    background-repeat: repeat;
+}
+.content-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(224, 87, 7);
+    
+}
+.card-2 {
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    border: 5px dotted darkblue;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    flex-direction: column;
+    align-content: space-around;
+    opacity: 0.8;
+    border-radius: 50%;
+    background-color: rgb(141, 199, 199);
+    
+}
+.content-3 {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    color: blue;
+    background-color: antiquewhite;
+}
+.content-3 img {
+    width: 250px;
+    overflow: hidden;
+    flex-shrink: 1;
+}
+#staff-header {
+    align-items: center;
+}
+#alex {
+    height: 250px;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    
+    
+}
+.gallery img {
+    width: 700px;
+    height: 700px;
+    float: initial;
+
+    
+}
+.gallery h3 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+.photo {
+    justify-self: center;
+}
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div id="logo" class="logo">
+          <img src="RESOURCES/IMAGES/logo 2D.png" alt="">
+        </div>
+        <div class="nav-content">
+          <ul>
+            <a href="#"><li>ABOUT US</li></a>
+            <a href="#"><li>PROGRAMMES</li></a>
+            <a href="#"><li>GALLERY</li></a>
+            <a href="#"><li>CONTACT US</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <main class="banner-container">
+        <div class="banner">
+          <h1>Ustadi Soccer Academy</h1>
+          <article>
+            <p>
+              This is an organization that seeks to locate, nurture and promote sports development in the region With a clear understanding of the importance and role of sports and fitness in the enhancement of social psychological, emotional and physical wellbeing in young people especially who are school going children The academy aims at providing the avenues and opportunity for the young to discover, develop and benefit from their talents. This will be done through the various sporting activities offered by the club 
+          </p>
+        </article>
+        </div>
+        <section class="content-1" id="programmes">
+        <div class="card-1">
+          <h3>Programmes</h3>
+          <article>
+            <ol>
+              <li>Physical Fitness Training</li>
+              <li>Fitness Training</li>
+              <li>Soccer Training</li>
+            </ol>
+        </article>
+        </div>
+        <div class="card-1" id="levels">
+          <h3>Levels</h3>
+          <ul>
+            <li>Beginner</li>
+            <li>Intermediate</li>
+            <li>Advanced</li>
+          </ul>
+        </div>
+      </section>
+      <section class="content-2">
+        <div class="card-2">
+          <h4>Beginner</h4>
+          <p>Ball orintation,dribbling,control, passing 1</p>
+        </div>
+        <div class="card-2">
+          <h4>Intermediate</h4>
+          <p>Ball handling, ball control-2,passing-2, defense and offense training,Team play-1</p>
+        </div>
+      
+         <div class="card-2">
+          <h4>Advanced</h4>
+          <p>Team play-2, positioning, zoning,strategies and tactics in the game of soccer</p>
+         </div>
+      </section>
+      <section class="content-3">
+        <div class="staff-header">
+          <h3>Our Staff</h3>
+        </div>
+        <div>
+          <img src="RESOURCES/IMAGES/staff-0.jpg" alt="" id="alex">
+          <p>Alex Otieno</p>
+          <p>Director/Founder</p>
+        </div>
+        <div>
+          <img src="RESOURCES/IMAGES/staff-1.jpg" alt="">
+          <p>Davies Kalana</p>
+          <p>Head Coach</p>
+        </div>
+        <div>
+          <img src="RESOURCES/IMAGES/staff-5.jpg" alt="">
+          <p>Adeline Mide </p>
+          <p>Conditioning Coach</p>
+        </div>
+        <div>
+          <img src="RESOURCES/IMAGES/staff-6.jpg" alt="">
+          <p>Juma Jared</p>
+          <p>Coach</p>
+        </div>
+       
+          
+        
+
+      </section>
+      <section class="gallery">
+        <h3 >Gallery</h3>
+        <div class="photo">
+          <img src="RESOURCES/IMAGES/ustadi collections/ustadi trophy pic1.jpg" alt="">
+        </div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi trophy pic 2.jpg" alt=""></div>
+        <div class="photo"> <img src="RESOURCES/IMAGES/ustadi collections/ustadi trophy pic 3.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi trophy pic 4.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi team photo 1.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi trophy pic 5.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi team photo 2.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi team photo 3.jpg" alt=""></div>
+        <div class="photo"> <img src="RESOURCES/IMAGES/ustadi collections/ustadi training pic 1.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi training pic 2.jpg" alt=""></div>
+        <div class="photo"><img src="RESOURCES/IMAGES/ustadi collections/ustadi training pic 3.jpg" alt=""></div>
+      </section>
+      </main>
+  </body>
+</html>
